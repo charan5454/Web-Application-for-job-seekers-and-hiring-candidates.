@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: #eee;
+        }   
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Box 1: To See the Job Seeker List Up to Now -->
+<div class="box" onclick="redirectToJobSeekerList()">
+    <h2>To See the Job Seeker List Up to Now</h2>
+</div>
+
+<!-- Box 2: To See How Many Companies Registered -->
+<div class="box" onclick="redirectToCompanyList()">
+    <h2>To See How Many Companies Registered</h2>
+</div>
+<div class="box" onclick="redirectToHiredPersons()">
+    <h2>Show The id's of the persons who already Hired</h2>
+</div>
+
+
+<script>
+    // JavaScript function to redirect to jobseekerlist.php
+    function redirectToJobSeekerList() {
+        window.location.href = 'jobseekerlist.php';
+    }
+    
+    function redirectToHiredPersons() {
+        window.location.href = 'ids.php';
+    }
+
+
+    // JavaScript function to redirect to companylist.php (replace with actual file name)
+    function redirectToCompanyList() {
+        window.location.href = 'companylist.php'; // Replace with the actual file name for company list
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+            background: url('') center/cover no-repeat;
+            overflow: auto;
+            background-image: url(firstpage.jpg);
+        }
+
+        nav {
+            background-color: #111; /* Darker background color */
+            overflow: hidden;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #333; /* Darker hover background color */
+            color: r    gba(255, 255, 255, 0.9); /* Lighter text color on hover */
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 7em;
+            transform: scale(0);
+            animation: scaleUp 2.5s forwards;
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0); /* Start with scale 0 */
+            }
+            to {
+                transform: scale(1); /* End with scale 1 */
+            }
+        }
+
+        /* Additional styles for scrolling text */
+        .scrolling-text-container {
+            position: fixed;
+            top: 60px; /* Adjust this value based on your navigation height */
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrollText 20s linear infinite;
+        }
+
+        @keyframes scrollText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="home.html">For Job Seekers</a>
+        <a href="home1.html">For Companies</a>
+        <a href="home2.html">For Management</a>
+        <a href="members.html">About Us</a>
+        <a href="newcomp.html">For Modification of records</a>
+    </div>
+</nav>
+
+<!-- <div class="scrolling-text-container">
+    <div class="scrolling-text">
+        
+</div> -->
+<marquee>Hello, Hearty Welcome to Our Website! Apply for a Job Now! Hello, Hearty Welcome to Our Website! Apply for a Job Now! Hello, Hearty Welcome to Our Website! Apply for a Job Now!
+</marquee>
+
+<center> 
+    <br><br><br>
+    <h2>Skills speak louder <br> than words</h2>
+</center>
+
+</body>
+</html>
